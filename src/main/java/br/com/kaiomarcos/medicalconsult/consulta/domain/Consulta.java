@@ -26,7 +26,9 @@ public class Consulta {
     @JoinColumn(name = "idUsuario")
     private Usuario usuario;
 
-    public Consulta(Long idConsulta, String dataConsulta, String profissional, String especialidade, Usuario usuario){
+    public Consulta(){}
+
+    public Consulta(Long idConsulta, String dataConsulta, String profissional, String especialidade){
         this.idConsulta = idConsulta;
         this.dataConsulta = dataConsulta;
         this.profissional = profissional;

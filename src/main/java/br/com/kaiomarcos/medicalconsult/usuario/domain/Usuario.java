@@ -34,13 +34,11 @@ public class Usuario {
     private Date dataNascimento;
 
     @Column(name = "PERMISSAO")
+    @Enumerated(EnumType.STRING)
     private Permissao permissao;
 
 //    private permissao permissao;
 
-    @OneToMany (mappedBy = "Usuario", cascade = CascadeType.ALL)
-
-    private List<Consulta>consultas;
 
     public Usuario(Long idUsuario, String nomeUsuario, String email, String cpf, String telefone, Date dataNascimento) {
         this.idUsuario = idUsuario;

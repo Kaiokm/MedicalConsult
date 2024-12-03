@@ -4,3 +4,12 @@ spring:
 java:
   runtime:
     version: '17'
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+    group-config:
+      default:
+        paths-to-match: /** # Ou ajuste para incluir/excluir caminhos específicos
+  swagger-ui:
+    path: /swagger-ui.html
